@@ -13,27 +13,27 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-enable-responsive-margins:                   false !default;
-$inuit-enable-responsive-margins--tiny:             false !default;
-$inuit-enable-responsive-margins--small:            false !default;
-$inuit-enable-responsive-margins--large:            false !default;
-$inuit-enable-responsive-margins--huge:             false !default;
+$u-m-responsive:                   false !default;
+$u-m-responsive--tiny:             false !default;
+$u-m-responsive--small:            false !default;
+$u-m-responsive--large:            false !default;
+$u-m-responsive--huge:             false !default;
 
-$inuit-enable-responsive-margins--negative:         false !default;
-$inuit-enable-responsive-margins--negative-tiny:    false !default;
-$inuit-enable-responsive-margins--negative-small:   false !default;
-$inuit-enable-responsive-margins--negative-large:   false !default;
-$inuit-enable-responsive-margins--negative-huge:    false !default;
+$u-m-responsive--negative:         false !default;
+$u-m-responsive--negative-tiny:    false !default;
+$u-m-responsive--negative-small:   false !default;
+$u-m-responsive--negative-large:   false !default;
+$u-m-responsive--negative-huge:    false !default;
 
-$inuit-enable-responsive-margins--none:             false !default;
+$u-m-responsive--none:             false !default;
 
-$inuit-enable-responsive-paddings:                  false !default;
-$inuit-enable-responsive-paddings--tiny:            false !default;
-$inuit-enable-responsive-paddings--small:           false !default;
-$inuit-enable-responsive-paddings--large:           false !default;
-$inuit-enable-responsive-paddings--huge:            false !default;
+$u-p-responsive:                  false !default;
+$u-p-responsive--tiny:            false !default;
+$u-p-responsive--small:           false !default;
+$u-p-responsive--large:           false !default;
+$u-p-responsive--huge:            false !default;
 
-$inuit-enable-responsive-paddings--none:            false !default;
+$u-p-responsive--none:            false !default;
 
 
 
@@ -71,7 +71,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 
 
 
-@if ($inuit-enable-responsive-margins == true) {
+@if ($u-m-responsive == true) {
 
     /**
      * Margin helper classes.
@@ -94,7 +94,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--tiny == true) {
+@if ($u-m-responsive--tiny == true) {
 
     /**
      * Add tiny margins.
@@ -115,7 +115,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--small == true) {
+@if ($u-m-responsive--small == true) {
 
     /**
      * Add small margins.
@@ -136,7 +136,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--large == true) {
+@if ($u-m-responsive--large == true) {
 
     /**
      * Add large margins.
@@ -157,7 +157,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--huge == true) {
+@if ($u-m-responsive--huge == true) {
 
     /**
      * Add huge margins.
@@ -178,7 +178,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--none == true) {
+@if ($u-m-responsive--none == true) {
 
     /**
      * Remove margins.
@@ -199,7 +199,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--negative == true) {
+@if ($u-m-responsive--negative == true) {
 
     /**
      * Negative margins.
@@ -220,7 +220,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--negative-tiny == true) {
+@if ($u-m-responsive--negative-tiny == true) {
 
     /**
      * Tiny negative margins.
@@ -241,7 +241,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--negative-small == true) {
+@if ($u-m-responsive--negative-small == true) {
 
     /**
      * Small negative margins.
@@ -262,7 +262,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--negative-large == true) {
+@if ($u-m-responsive--negative-large == true) {
 
     /**
      * Large negative margins.
@@ -283,7 +283,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-margins--negative-huge == true) {
+@if ($u-m-responsive--negative-huge == true) {
 
     /**
      * Huge negative margins.
@@ -307,7 +307,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 
 
 
-@if ($inuit-enable-responsive-paddings == true) {
+@if ($u-p-responsive == true) {
 
     /**
      * Padding helper classes.
@@ -330,7 +330,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-paddings--tiny == true) {
+@if ($u-p-responsive--tiny == true) {
 
     /**
      * Add tiny paddings.
@@ -351,7 +351,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-paddings--small == true) {
+@if ($u-p-responsive--small == true) {
 
     /**
      * Add small paddings.
@@ -372,7 +372,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-paddings--large == true) {
+@if ($u-p-responsive--large == true) {
 
     /**
      * Add large paddings.
@@ -393,7 +393,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-paddings--huge == true) {
+@if ($u-p-responsive--huge == true) {
 
     /**
      * Add huge paddings.
@@ -414,7 +414,7 @@ $inuit-enable-responsive-paddings--none:            false !default;
 }
 
 
-@if ($inuit-enable-responsive-paddings--none == true) {
+@if ($u-p-responsive--none == true) {
 
     /**
      * Remove paddings.
