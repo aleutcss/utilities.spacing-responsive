@@ -47,21 +47,21 @@ $u-p-responsive--none:            false !default;
     // Loop through our previously-defined breakpoints.
     @each $breakpoint in $breakpoints {
 
-        $aleut-generate-spacing-alias:      nth($breakpoint, 1) !global;
-        $aleut-generate-spacing-condition:  nth($breakpoint, 2);
+        $generate-spacing-alias:      nth($breakpoint, 1) !global;
+        $generate-spacing-condition:  nth($breakpoint, 2);
 
         // This isn’t ideal, but we definitely don’t want to generate widths
         // for retina devices. Exclude retina media-qeuries manually.
-        @if ($aleut-generate-spacing-alias != "retina") {
+        @if ($generate-spacing-alias != "retina") {
 
-            @include media-query($aleut-generate-spacing-alias) {
+            @include media-query($generate-spacing-alias) {
                 @content;
             } // Close media query.
 
         } // Close retina check.
 
         // Take the global variable back out of scope.
-        $aleut-generate-spacing-alias: null !global;
+        $generate-spacing-alias: null !global;
 
     } // Close breakpoints loop.
 
@@ -81,13 +81,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m\@#{$aleut-generate-spacing-alias}      { margin:           $aleut-margin !important; }
-        .u-mt\@#{$aleut-generate-spacing-alias}     { margin-top:       $aleut-margin !important; }
-        .u-mr\@#{$aleut-generate-spacing-alias}     { margin-right:     $aleut-margin !important; }
-        .u-mb\@#{$aleut-generate-spacing-alias}     { margin-bottom:    $aleut-margin !important; }
-        .u-ml\@#{$aleut-generate-spacing-alias}     { margin-left:      $aleut-margin !important; }
-        .u-mh\@#{$aleut-generate-spacing-alias}     { margin-right:     $aleut-margin !important; margin-left:      $aleut-margin !important; }
-        .u-mv\@#{$aleut-generate-spacing-alias}     { margin-top:       $aleut-margin !important; margin-bottom:    $aleut-margin !important; }
+        .u-m\@#{$generate-spacing-alias}      { margin:           $margin !important; }
+        .u-mt\@#{$generate-spacing-alias}     { margin-top:       $margin !important; }
+        .u-mr\@#{$generate-spacing-alias}     { margin-right:     $margin !important; }
+        .u-mb\@#{$generate-spacing-alias}     { margin-bottom:    $margin !important; }
+        .u-ml\@#{$generate-spacing-alias}     { margin-left:      $margin !important; }
+        .u-mh\@#{$generate-spacing-alias}     { margin-right:     $margin !important; margin-left:      $margin !important; }
+        .u-mv\@#{$generate-spacing-alias}     { margin-top:       $margin !important; margin-bottom:    $margin !important; }
 
     }
 
@@ -102,13 +102,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-tiny\@#{$aleut-generate-spacing-alias}     { margin:           $aleut-margin--tiny !important; }
-        .u-mt-tiny\@#{$aleut-generate-spacing-alias}    { margin-top:       $aleut-margin--tiny !important; }
-        .u-mr-tiny\@#{$aleut-generate-spacing-alias}    { margin-right:     $aleut-margin--tiny !important; }
-        .u-mb-tiny\@#{$aleut-generate-spacing-alias}    { margin-bottom:    $aleut-margin--tiny !important; }
-        .u-ml-tiny\@#{$aleut-generate-spacing-alias}    { margin-left:      $aleut-margin--tiny !important; }
-        .u-mh-tiny\@#{$aleut-generate-spacing-alias}    { margin-right:     $aleut-margin--tiny !important; margin-left:     $aleut-margin--tiny !important; }
-        .u-mv-tiny\@#{$aleut-generate-spacing-alias}    { margin-top:       $aleut-margin--tiny !important; margin-bottom:   $aleut-margin--tiny !important; }
+        .u-m-tiny\@#{$generate-spacing-alias}     { margin:           $margin--tiny !important; }
+        .u-mt-tiny\@#{$generate-spacing-alias}    { margin-top:       $margin--tiny !important; }
+        .u-mr-tiny\@#{$generate-spacing-alias}    { margin-right:     $margin--tiny !important; }
+        .u-mb-tiny\@#{$generate-spacing-alias}    { margin-bottom:    $margin--tiny !important; }
+        .u-ml-tiny\@#{$generate-spacing-alias}    { margin-left:      $margin--tiny !important; }
+        .u-mh-tiny\@#{$generate-spacing-alias}    { margin-right:     $margin--tiny !important; margin-left:     $margin--tiny !important; }
+        .u-mv-tiny\@#{$generate-spacing-alias}    { margin-top:       $margin--tiny !important; margin-bottom:   $margin--tiny !important; }
 
     }
 
@@ -123,13 +123,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-small\@#{$aleut-generate-spacing-alias}      { margin:           $aleut-margin--small !important; }
-        .u-mt-small\@#{$aleut-generate-spacing-alias}     { margin-top:       $aleut-margin--small !important; }
-        .u-mr-small\@#{$aleut-generate-spacing-alias}     { margin-right:     $aleut-margin--small !important; }
-        .u-mb-small\@#{$aleut-generate-spacing-alias}     { margin-bottom:    $aleut-margin--small !important; }
-        .u-ml-small\@#{$aleut-generate-spacing-alias}     { margin-left:      $aleut-margin--small !important; }
-        .u-mh-small\@#{$aleut-generate-spacing-alias}     { margin-right:     $aleut-margin--small !important; margin-left:   $aleut-margin--small !important; }
-        .u-mv-small\@#{$aleut-generate-spacing-alias}     { margin-top:       $aleut-margin--small !important; margin-bottom: $aleut-margin--small !important; }
+        .u-m-small\@#{$generate-spacing-alias}      { margin:           $margin--small !important; }
+        .u-mt-small\@#{$generate-spacing-alias}     { margin-top:       $margin--small !important; }
+        .u-mr-small\@#{$generate-spacing-alias}     { margin-right:     $margin--small !important; }
+        .u-mb-small\@#{$generate-spacing-alias}     { margin-bottom:    $margin--small !important; }
+        .u-ml-small\@#{$generate-spacing-alias}     { margin-left:      $margin--small !important; }
+        .u-mh-small\@#{$generate-spacing-alias}     { margin-right:     $margin--small !important; margin-left:   $margin--small !important; }
+        .u-mv-small\@#{$generate-spacing-alias}     { margin-top:       $margin--small !important; margin-bottom: $margin--small !important; }
 
     }
 
@@ -144,13 +144,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-large\@#{$aleut-generate-spacing-alias}     { margin:           $aleut-margin--large !important; }
-        .u-mt-large\@#{$aleut-generate-spacing-alias}    { margin-top:       $aleut-margin--large !important; }
-        .u-mr-large\@#{$aleut-generate-spacing-alias}    { margin-right:     $aleut-margin--large !important; }
-        .u-mb-large\@#{$aleut-generate-spacing-alias}    { margin-bottom:    $aleut-margin--large !important; }
-        .u-ml-large\@#{$aleut-generate-spacing-alias}    { margin-left:      $aleut-margin--large !important; }
-        .u-mh-large\@#{$aleut-generate-spacing-alias}    { margin-right:     $aleut-margin--large !important; margin-left:      $aleut-margin--large !important; }
-        .u-mv-large\@#{$aleut-generate-spacing-alias}    { margin-top:       $aleut-margin--large !important; margin-bottom:    $aleut-margin--large !important; }
+        .u-m-large\@#{$generate-spacing-alias}     { margin:           $margin--large !important; }
+        .u-mt-large\@#{$generate-spacing-alias}    { margin-top:       $margin--large !important; }
+        .u-mr-large\@#{$generate-spacing-alias}    { margin-right:     $margin--large !important; }
+        .u-mb-large\@#{$generate-spacing-alias}    { margin-bottom:    $margin--large !important; }
+        .u-ml-large\@#{$generate-spacing-alias}    { margin-left:      $margin--large !important; }
+        .u-mh-large\@#{$generate-spacing-alias}    { margin-right:     $margin--large !important; margin-left:      $margin--large !important; }
+        .u-mv-large\@#{$generate-spacing-alias}    { margin-top:       $margin--large !important; margin-bottom:    $margin--large !important; }
 
     }
 
@@ -165,13 +165,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-huge\@#{$aleut-generate-spacing-alias}   { margin:           $aleut-margin--huge !important; }
-        .u-mt-huge\@#{$aleut-generate-spacing-alias}  { margin-top:       $aleut-margin--huge !important; }
-        .u-mr-huge\@#{$aleut-generate-spacing-alias}  { margin-right:     $aleut-margin--huge !important; }
-        .u-mb-huge\@#{$aleut-generate-spacing-alias}  { margin-bottom:    $aleut-margin--huge !important; }
-        .u-ml-huge\@#{$aleut-generate-spacing-alias}  { margin-left:      $aleut-margin--huge !important; }
-        .u-mh-huge\@#{$aleut-generate-spacing-alias}  { margin-right:     $aleut-margin--huge !important; margin-left:   $aleut-margin--huge !important; }
-        .u-mv-huge\@#{$aleut-generate-spacing-alias}  { margin-top:       $aleut-margin--huge !important; margin-bottom: $aleut-margin--huge !important; }
+        .u-m-huge\@#{$generate-spacing-alias}   { margin:           $margin--huge !important; }
+        .u-mt-huge\@#{$generate-spacing-alias}  { margin-top:       $margin--huge !important; }
+        .u-mr-huge\@#{$generate-spacing-alias}  { margin-right:     $margin--huge !important; }
+        .u-mb-huge\@#{$generate-spacing-alias}  { margin-bottom:    $margin--huge !important; }
+        .u-ml-huge\@#{$generate-spacing-alias}  { margin-left:      $margin--huge !important; }
+        .u-mh-huge\@#{$generate-spacing-alias}  { margin-right:     $margin--huge !important; margin-left:   $margin--huge !important; }
+        .u-mv-huge\@#{$generate-spacing-alias}  { margin-top:       $margin--huge !important; margin-bottom: $margin--huge !important; }
 
     }
 
@@ -186,13 +186,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-none\@#{$aleut-generate-spacing-alias}      { margin:           0 !important; }
-        .u-mt-none\@#{$aleut-generate-spacing-alias}     { margin-top:       0 !important; }
-        .u-mr-none\@#{$aleut-generate-spacing-alias}     { margin-right:     0 !important; }
-        .u-mb-none\@#{$aleut-generate-spacing-alias}     { margin-bottom:    0 !important; }
-        .u-ml-none\@#{$aleut-generate-spacing-alias}     { margin-left:      0 !important; }
-        .u-mh-none\@#{$aleut-generate-spacing-alias}     { margin-right:     0 !important; margin-left:      0 !important; }
-        .u-mv-none\@#{$aleut-generate-spacing-alias}     { margin-top:       0 !important; margin-bottom:    0 !important; }
+        .u-m-none\@#{$generate-spacing-alias}      { margin:           0 !important; }
+        .u-mt-none\@#{$generate-spacing-alias}     { margin-top:       0 !important; }
+        .u-mr-none\@#{$generate-spacing-alias}     { margin-right:     0 !important; }
+        .u-mb-none\@#{$generate-spacing-alias}     { margin-bottom:    0 !important; }
+        .u-ml-none\@#{$generate-spacing-alias}     { margin-left:      0 !important; }
+        .u-mh-none\@#{$generate-spacing-alias}     { margin-right:     0 !important; margin-left:      0 !important; }
+        .u-mv-none\@#{$generate-spacing-alias}     { margin-top:       0 !important; margin-bottom:    0 !important; }
 
     }
 
@@ -207,13 +207,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-negative\@#{$aleut-generate-spacing-alias}      { margin:           -$aleut-margin !important; }
-        .u-mt-negative\@#{$aleut-generate-spacing-alias}     { margin-top:       -$aleut-margin !important; }
-        .u-mr-negative\@#{$aleut-generate-spacing-alias}     { margin-right:     -$aleut-margin !important; }
-        .u-mb-negative\@#{$aleut-generate-spacing-alias}     { margin-bottom:    -$aleut-margin !important; }
-        .u-ml-negative\@#{$aleut-generate-spacing-alias}     { margin-left:      -$aleut-margin !important; }
-        .u-mh-negative\@#{$aleut-generate-spacing-alias}     { margin-right:     -$aleut-margin !important; margin-left:      -$aleut-margin !important; }
-        .u-mv-negative\@#{$aleut-generate-spacing-alias}     { margin-top:       -$aleut-margin !important; margin-bottom:    -$aleut-margin !important; }
+        .u-m-negative\@#{$generate-spacing-alias}      { margin:           -$margin !important; }
+        .u-mt-negative\@#{$generate-spacing-alias}     { margin-top:       -$margin !important; }
+        .u-mr-negative\@#{$generate-spacing-alias}     { margin-right:     -$margin !important; }
+        .u-mb-negative\@#{$generate-spacing-alias}     { margin-bottom:    -$margin !important; }
+        .u-ml-negative\@#{$generate-spacing-alias}     { margin-left:      -$margin !important; }
+        .u-mh-negative\@#{$generate-spacing-alias}     { margin-right:     -$margin !important; margin-left:      -$margin !important; }
+        .u-mv-negative\@#{$generate-spacing-alias}     { margin-top:       -$margin !important; margin-bottom:    -$margin !important; }
 
     }
 
@@ -228,13 +228,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-negative-tiny\@#{$aleut-generate-spacing-alias}    { margin:           -$aleut-margin--tiny !important; }
-        .u-mt-negative-tiny\@#{$aleut-generate-spacing-alias}   { margin-top:       -$aleut-margin--tiny !important; }
-        .u-mr-negative-tiny\@#{$aleut-generate-spacing-alias}   { margin-right:     -$aleut-margin--tiny !important; }
-        .u-mb-negative-tiny\@#{$aleut-generate-spacing-alias}   { margin-bottom:    -$aleut-margin--tiny !important; }
-        .u-ml-negative-tiny\@#{$aleut-generate-spacing-alias}   { margin-left:      -$aleut-margin--tiny !important; }
-        .u-mh-negative-tiny\@#{$aleut-generate-spacing-alias}   { margin-right:     -$aleut-margin--tiny !important; margin-left:     -$aleut-margin--tiny !important; }
-        .u-mv-negative-tiny\@#{$aleut-generate-spacing-alias}   { margin-top:       -$aleut-margin--tiny !important; margin-bottom:   -$aleut-margin--tiny !important; }
+        .u-m-negative-tiny\@#{$generate-spacing-alias}    { margin:           -$margin--tiny !important; }
+        .u-mt-negative-tiny\@#{$generate-spacing-alias}   { margin-top:       -$margin--tiny !important; }
+        .u-mr-negative-tiny\@#{$generate-spacing-alias}   { margin-right:     -$margin--tiny !important; }
+        .u-mb-negative-tiny\@#{$generate-spacing-alias}   { margin-bottom:    -$margin--tiny !important; }
+        .u-ml-negative-tiny\@#{$generate-spacing-alias}   { margin-left:      -$margin--tiny !important; }
+        .u-mh-negative-tiny\@#{$generate-spacing-alias}   { margin-right:     -$margin--tiny !important; margin-left:     -$margin--tiny !important; }
+        .u-mv-negative-tiny\@#{$generate-spacing-alias}   { margin-top:       -$margin--tiny !important; margin-bottom:   -$margin--tiny !important; }
 
     }
 
@@ -249,13 +249,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-negative-small\@#{$aleut-generate-spacing-alias}     { margin:           -$aleut-margin--small !important; }
-        .u-mt-negative-small\@#{$aleut-generate-spacing-alias}    { margin-top:       -$aleut-margin--small !important; }
-        .u-mr-negative-small\@#{$aleut-generate-spacing-alias}    { margin-right:     -$aleut-margin--small !important; }
-        .u-mb-negative-small\@#{$aleut-generate-spacing-alias}    { margin-bottom:    -$aleut-margin--small !important; }
-        .u-ml-negative-small\@#{$aleut-generate-spacing-alias}    { margin-left:      -$aleut-margin--small !important; }
-        .u-mh-negative-small\@#{$aleut-generate-spacing-alias}    { margin-right:     -$aleut-margin--small !important; margin-left:   -$aleut-margin--small !important; }
-        .u-mv-negative-small\@#{$aleut-generate-spacing-alias}    { margin-top:       -$aleut-margin--small !important; margin-bottom: -$aleut-margin--small !important; }
+        .u-m-negative-small\@#{$generate-spacing-alias}     { margin:           -$margin--small !important; }
+        .u-mt-negative-small\@#{$generate-spacing-alias}    { margin-top:       -$margin--small !important; }
+        .u-mr-negative-small\@#{$generate-spacing-alias}    { margin-right:     -$margin--small !important; }
+        .u-mb-negative-small\@#{$generate-spacing-alias}    { margin-bottom:    -$margin--small !important; }
+        .u-ml-negative-small\@#{$generate-spacing-alias}    { margin-left:      -$margin--small !important; }
+        .u-mh-negative-small\@#{$generate-spacing-alias}    { margin-right:     -$margin--small !important; margin-left:   -$margin--small !important; }
+        .u-mv-negative-small\@#{$generate-spacing-alias}    { margin-top:       -$margin--small !important; margin-bottom: -$margin--small !important; }
 
     }
 
@@ -270,13 +270,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-negative-large\@#{$aleut-generate-spacing-alias}    { margin:           double(-$aleut-margin) !important; }
-        .u-mt-negative-large\@#{$aleut-generate-spacing-alias}   { margin-top:       double(-$aleut-margin) !important; }
-        .u-mr-negative-large\@#{$aleut-generate-spacing-alias}   { margin-right:     double(-$aleut-margin) !important; }
-        .u-mb-negative-large\@#{$aleut-generate-spacing-alias}   { margin-bottom:    double(-$aleut-margin) !important; }
-        .u-ml-negative-large\@#{$aleut-generate-spacing-alias}   { margin-left:      double(-$aleut-margin) !important; }
-        .u-mh-negative-large\@#{$aleut-generate-spacing-alias}   { margin-right:     double(-$aleut-margin) !important; margin-left:      double(-$aleut-margin) !important; }
-        .u-mv-negative-large\@#{$aleut-generate-spacing-alias}   { margin-top:       double(-$aleut-margin) !important; margin-bottom:    double(-$aleut-margin) !important; }
+        .u-m-negative-large\@#{$generate-spacing-alias}    { margin:           double(-$margin) !important; }
+        .u-mt-negative-large\@#{$generate-spacing-alias}   { margin-top:       double(-$margin) !important; }
+        .u-mr-negative-large\@#{$generate-spacing-alias}   { margin-right:     double(-$margin) !important; }
+        .u-mb-negative-large\@#{$generate-spacing-alias}   { margin-bottom:    double(-$margin) !important; }
+        .u-ml-negative-large\@#{$generate-spacing-alias}   { margin-left:      double(-$margin) !important; }
+        .u-mh-negative-large\@#{$generate-spacing-alias}   { margin-right:     double(-$margin) !important; margin-left:      double(-$margin) !important; }
+        .u-mv-negative-large\@#{$generate-spacing-alias}   { margin-top:       double(-$margin) !important; margin-bottom:    double(-$margin) !important; }
 
     }
 
@@ -291,13 +291,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-m-negative-huge\@#{$aleut-generate-spacing-alias}  { margin:           quadruple(-$aleut-margin) !important; }
-        .u-mt-negative-huge\@#{$aleut-generate-spacing-alias} { margin-top:       quadruple(-$aleut-margin) !important; }
-        .u-mr-negative-huge\@#{$aleut-generate-spacing-alias} { margin-right:     quadruple(-$aleut-margin) !important; }
-        .u-mb-negative-huge\@#{$aleut-generate-spacing-alias} { margin-bottom:    quadruple(-$aleut-margin) !important; }
-        .u-ml-negative-huge\@#{$aleut-generate-spacing-alias} { margin-left:      quadruple(-$aleut-margin) !important; }
-        .u-mh-negative-huge\@#{$aleut-generate-spacing-alias} { margin-right:     quadruple(-$aleut-margin) !important; margin-left:   quadruple(-$aleut-margin) !important; }
-        .u-mv-negative-huge\@#{$aleut-generate-spacing-alias} { margin-top:       quadruple(-$aleut-margin) !important; margin-bottom: quadruple(-$aleut-margin) !important; }
+        .u-m-negative-huge\@#{$generate-spacing-alias}  { margin:           quadruple(-$margin) !important; }
+        .u-mt-negative-huge\@#{$generate-spacing-alias} { margin-top:       quadruple(-$margin) !important; }
+        .u-mr-negative-huge\@#{$generate-spacing-alias} { margin-right:     quadruple(-$margin) !important; }
+        .u-mb-negative-huge\@#{$generate-spacing-alias} { margin-bottom:    quadruple(-$margin) !important; }
+        .u-ml-negative-huge\@#{$generate-spacing-alias} { margin-left:      quadruple(-$margin) !important; }
+        .u-mh-negative-huge\@#{$generate-spacing-alias} { margin-right:     quadruple(-$margin) !important; margin-left:   quadruple(-$margin) !important; }
+        .u-mv-negative-huge\@#{$generate-spacing-alias} { margin-top:       quadruple(-$margin) !important; margin-bottom: quadruple(-$margin) !important; }
 
     }
 
@@ -317,13 +317,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-p\@#{$aleut-generate-spacing-alias}       { padding:          $aleut-padding !important; }
-        .u-pt\@#{$aleut-generate-spacing-alias}      { padding-top:      $aleut-padding !important; }
-        .u-pr\@#{$aleut-generate-spacing-alias}      { padding-right:    $aleut-padding !important; }
-        .u-pb\@#{$aleut-generate-spacing-alias}      { padding-bottom:   $aleut-padding !important; }
-        .u-pl\@#{$aleut-generate-spacing-alias}      { padding-left:     $aleut-padding !important; }
-        .u-ph\@#{$aleut-generate-spacing-alias}      { padding-right:    $aleut-padding !important; padding-left:    $aleut-padding !important; }
-        .u-pv\@#{$aleut-generate-spacing-alias}      { padding-top:      $aleut-padding !important; padding-bottom:  $aleut-padding !important; }
+        .u-p\@#{$generate-spacing-alias}       { padding:          $padding !important; }
+        .u-pt\@#{$generate-spacing-alias}      { padding-top:      $padding !important; }
+        .u-pr\@#{$generate-spacing-alias}      { padding-right:    $padding !important; }
+        .u-pb\@#{$generate-spacing-alias}      { padding-bottom:   $padding !important; }
+        .u-pl\@#{$generate-spacing-alias}      { padding-left:     $padding !important; }
+        .u-ph\@#{$generate-spacing-alias}      { padding-right:    $padding !important; padding-left:    $padding !important; }
+        .u-pv\@#{$generate-spacing-alias}      { padding-top:      $padding !important; padding-bottom:  $padding !important; }
 
     }
 
@@ -338,13 +338,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-p-tiny\@#{$aleut-generate-spacing-alias}     { padding:           $aleut-padding--tiny !important; }
-        .u-pt-tiny\@#{$aleut-generate-spacing-alias}    { padding-top:       $aleut-padding--tiny !important; }
-        .u-pr-tiny\@#{$aleut-generate-spacing-alias}    { padding-right:     $aleut-padding--tiny !important; }
-        .u-pb-tiny\@#{$aleut-generate-spacing-alias}    { padding-bottom:    $aleut-padding--tiny !important; }
-        .u-pl-tiny\@#{$aleut-generate-spacing-alias}    { padding-left:      $aleut-padding--tiny !important; }
-        .u-ph-tiny\@#{$aleut-generate-spacing-alias}    { padding-right:     $aleut-padding--tiny !important; padding-left:      $aleut-padding--tiny !important; }
-        .u-pv-tiny\@#{$aleut-generate-spacing-alias}    { padding-top:       $aleut-padding--tiny !important; padding-bottom:    $aleut-padding--tiny !important; }
+        .u-p-tiny\@#{$generate-spacing-alias}     { padding:           $padding--tiny !important; }
+        .u-pt-tiny\@#{$generate-spacing-alias}    { padding-top:       $padding--tiny !important; }
+        .u-pr-tiny\@#{$generate-spacing-alias}    { padding-right:     $padding--tiny !important; }
+        .u-pb-tiny\@#{$generate-spacing-alias}    { padding-bottom:    $padding--tiny !important; }
+        .u-pl-tiny\@#{$generate-spacing-alias}    { padding-left:      $padding--tiny !important; }
+        .u-ph-tiny\@#{$generate-spacing-alias}    { padding-right:     $padding--tiny !important; padding-left:      $padding--tiny !important; }
+        .u-pv-tiny\@#{$generate-spacing-alias}    { padding-top:       $padding--tiny !important; padding-bottom:    $padding--tiny !important; }
 
     }
 
@@ -359,13 +359,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-p-small\@#{$aleut-generate-spacing-alias}      { padding:           $aleut-padding--small !important; }
-        .u-pt-small\@#{$aleut-generate-spacing-alias}     { padding-top:       $aleut-padding--small !important; }
-        .u-pr-small\@#{$aleut-generate-spacing-alias}     { padding-right:     $aleut-padding--small !important; }
-        .u-pb-small\@#{$aleut-generate-spacing-alias}     { padding-bottom:    $aleut-padding--small !important; }
-        .u-pl-small\@#{$aleut-generate-spacing-alias}     { padding-left:      $aleut-padding--small !important; }
-        .u-ph-small\@#{$aleut-generate-spacing-alias}     { padding-right:     $aleut-padding--small !important; padding-left:    $aleut-padding--small !important; }
-        .u-pv-small\@#{$aleut-generate-spacing-alias}     { padding-top:       $aleut-padding--small !important; padding-bottom:  $aleut-padding--small !important; }
+        .u-p-small\@#{$generate-spacing-alias}      { padding:           $padding--small !important; }
+        .u-pt-small\@#{$generate-spacing-alias}     { padding-top:       $padding--small !important; }
+        .u-pr-small\@#{$generate-spacing-alias}     { padding-right:     $padding--small !important; }
+        .u-pb-small\@#{$generate-spacing-alias}     { padding-bottom:    $padding--small !important; }
+        .u-pl-small\@#{$generate-spacing-alias}     { padding-left:      $padding--small !important; }
+        .u-ph-small\@#{$generate-spacing-alias}     { padding-right:     $padding--small !important; padding-left:    $padding--small !important; }
+        .u-pv-small\@#{$generate-spacing-alias}     { padding-top:       $padding--small !important; padding-bottom:  $padding--small !important; }
 
     }
 
@@ -380,13 +380,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-p-large\@#{$aleut-generate-spacing-alias}     { padding:           $aleut-padding--large !important; }
-        .u-pt-large\@#{$aleut-generate-spacing-alias}    { padding-top:       $aleut-padding--large !important; }
-        .u-pr-large\@#{$aleut-generate-spacing-alias}    { padding-right:     $aleut-padding--large !important; }
-        .u-pb-large\@#{$aleut-generate-spacing-alias}    { padding-bottom:    $aleut-padding--large !important; }
-        .u-pl-large\@#{$aleut-generate-spacing-alias}    { padding-left:      $aleut-padding--large !important; }
-        .u-ph-large\@#{$aleut-generate-spacing-alias}    { padding-right:     $aleut-padding--large !important; padding-left:   $aleut-padding--large !important; }
-        .u-pv-large\@#{$aleut-generate-spacing-alias}    { padding-top:       $aleut-padding--large !important; padding-bottom: $aleut-padding--large !important; }
+        .u-p-large\@#{$generate-spacing-alias}     { padding:           $padding--large !important; }
+        .u-pt-large\@#{$generate-spacing-alias}    { padding-top:       $padding--large !important; }
+        .u-pr-large\@#{$generate-spacing-alias}    { padding-right:     $padding--large !important; }
+        .u-pb-large\@#{$generate-spacing-alias}    { padding-bottom:    $padding--large !important; }
+        .u-pl-large\@#{$generate-spacing-alias}    { padding-left:      $padding--large !important; }
+        .u-ph-large\@#{$generate-spacing-alias}    { padding-right:     $padding--large !important; padding-left:   $padding--large !important; }
+        .u-pv-large\@#{$generate-spacing-alias}    { padding-top:       $padding--large !important; padding-bottom: $padding--large !important; }
 
     }
 
@@ -401,13 +401,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-p-huge\@#{$aleut-generate-spacing-alias}   { padding:           $aleut-padding--huge !important; }
-        .u-pt-huge\@#{$aleut-generate-spacing-alias}  { padding-top:       $aleut-padding--huge !important; }
-        .u-pr-huge\@#{$aleut-generate-spacing-alias}  { padding-right:     $aleut-padding--huge !important; }
-        .u-pb-huge\@#{$aleut-generate-spacing-alias}  { padding-bottom:    $aleut-padding--huge !important; }
-        .u-pl-huge\@#{$aleut-generate-spacing-alias}  { padding-left:      $aleut-padding--huge !important; }
-        .u-ph-huge\@#{$aleut-generate-spacing-alias}  { padding-right:     $aleut-padding--huge !important; padding-left:    $aleut-padding--huge !important; }
-        .u-pv-huge\@#{$aleut-generate-spacing-alias}  { padding-top:       $aleut-padding--huge !important; padding-bottom:  $aleut-padding--huge !important; }
+        .u-p-huge\@#{$generate-spacing-alias}   { padding:           $padding--huge !important; }
+        .u-pt-huge\@#{$generate-spacing-alias}  { padding-top:       $padding--huge !important; }
+        .u-pr-huge\@#{$generate-spacing-alias}  { padding-right:     $padding--huge !important; }
+        .u-pb-huge\@#{$generate-spacing-alias}  { padding-bottom:    $padding--huge !important; }
+        .u-pl-huge\@#{$generate-spacing-alias}  { padding-left:      $padding--huge !important; }
+        .u-ph-huge\@#{$generate-spacing-alias}  { padding-right:     $padding--huge !important; padding-left:    $padding--huge !important; }
+        .u-pv-huge\@#{$generate-spacing-alias}  { padding-top:       $padding--huge !important; padding-bottom:  $padding--huge !important; }
 
     }
 
@@ -422,13 +422,13 @@ $u-p-responsive--none:            false !default;
 
     @include aleut-generate-spacing() {
 
-        .u-p-none\@#{$aleut-generate-spacing-alias}      { padding:          0 !important; }
-        .u-pt-none\@#{$aleut-generate-spacing-alias}     { padding-top:      0 !important; }
-        .u-pr-none\@#{$aleut-generate-spacing-alias}     { padding-right:    0 !important; }
-        .u-pb-none\@#{$aleut-generate-spacing-alias}     { padding-bottom:   0 !important; }
-        .u-pl-none\@#{$aleut-generate-spacing-alias}     { padding-left:     0 !important; }
-        .u-ph-none\@#{$aleut-generate-spacing-alias}     { padding-right:    0 !important; padding-left:     0 !important; }
-        .u-pv-none\@#{$aleut-generate-spacing-alias}     { padding-top:      0 !important; padding-bottom:   0 !important; }
+        .u-p-none\@#{$generate-spacing-alias}      { padding:          0 !important; }
+        .u-pt-none\@#{$generate-spacing-alias}     { padding-top:      0 !important; }
+        .u-pr-none\@#{$generate-spacing-alias}     { padding-right:    0 !important; }
+        .u-pb-none\@#{$generate-spacing-alias}     { padding-bottom:   0 !important; }
+        .u-pl-none\@#{$generate-spacing-alias}     { padding-left:     0 !important; }
+        .u-ph-none\@#{$generate-spacing-alias}     { padding-right:    0 !important; padding-left:     0 !important; }
+        .u-pv-none\@#{$generate-spacing-alias}     { padding-top:      0 !important; padding-bottom:   0 !important; }
 
     }
 
