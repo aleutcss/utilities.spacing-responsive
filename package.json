@@ -1,5 +1,5 @@
 {
-  "name": "aleut-responsive-spacing",
+  "name": "@aleut/aleut-responsive-spacing",
   "version": "0.1.0",
   "description": "Responsively controlled width classes for the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_trumps.spacing-responsive.scss",
