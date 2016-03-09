@@ -9,31 +9,31 @@
  * `.u-(m|p)(t|r|b|l|h|v)(-negative)(-tiny|-small|-large|-huge|-none)(@breakpoint) {}`
  * = margin/padding top/right/bottom/left/horizontal/vertical negative tiny/small/large/huge/none @breakpoint
  *
-	<div class="u-mr u-mb-small u-mb@lap"></div>
+	<div class="u-mr u-mb-small u-mb@s"></div>
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$u-m-responsive:                   false !default;
-$u-m-responsive--tiny:             false !default;
-$u-m-responsive--small:            false !default;
-$u-m-responsive--large:            false !default;
-$u-m-responsive--huge:             false !default;
+$u-m-responsive:                  false !default;
+$u-m-responsive-tiny:             false !default;
+$u-m-responsive-small:            false !default;
+$u-m-responsive-large:            false !default;
+$u-m-responsive-huge:             false !default;
 
-$u-m-responsive--negative:         false !default;
-$u-m-responsive--negative-tiny:    false !default;
-$u-m-responsive--negative-small:   false !default;
-$u-m-responsive--negative-large:   false !default;
-$u-m-responsive--negative-huge:    false !default;
+$u-m-responsive-negative:         false !default;
+$u-m-responsive-negative-tiny:    false !default;
+$u-m-responsive-negative-small:   false !default;
+$u-m-responsive-negative-large:   false !default;
+$u-m-responsive-negative-huge:    false !default;
 
-$u-m-responsive--none:             false !default;
+$u-m-responsive-none:             false !default;
 
 $u-p-responsive:                  false !default;
-$u-p-responsive--tiny:            false !default;
-$u-p-responsive--small:           false !default;
-$u-p-responsive--large:           false !default;
-$u-p-responsive--huge:            false !default;
+$u-p-responsive-tiny:             false !default;
+$u-p-responsive-small:            false !default;
+$u-p-responsive-large:            false !default;
+$u-p-responsive-huge:             false !default;
 
-$u-p-responsive--none:            false !default;
+$u-p-responsive-none:             false !default;
 
 
 
@@ -94,7 +94,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--tiny == true) {
+@if ($u-m-responsive-tiny == true) {
 
     /**
      * Add tiny margins.
@@ -115,7 +115,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--small == true) {
+@if ($u-m-responsive-small == true) {
 
     /**
      * Add small margins.
@@ -136,7 +136,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--large == true) {
+@if ($u-m-responsive-large == true) {
 
     /**
      * Add large margins.
@@ -157,7 +157,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--huge == true) {
+@if ($u-m-responsive-huge == true) {
 
     /**
      * Add huge margins.
@@ -178,7 +178,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--none == true) {
+@if ($u-m-responsive-none == true) {
 
     /**
      * Remove margins.
@@ -199,7 +199,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--negative == true) {
+@if ($u-m-responsive-negative == true) {
 
     /**
      * Negative margins.
@@ -220,7 +220,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--negative-tiny == true) {
+@if ($u-m-responsive-negative-tiny == true) {
 
     /**
      * Tiny negative margins.
@@ -241,7 +241,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--negative-small == true) {
+@if ($u-m-responsive-negative-small == true) {
 
     /**
      * Small negative margins.
@@ -262,7 +262,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--negative-large == true) {
+@if ($u-m-responsive-negative-large == true) {
 
     /**
      * Large negative margins.
@@ -283,7 +283,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-m-responsive--negative-huge == true) {
+@if ($u-m-responsive-negative-huge == true) {
 
     /**
      * Huge negative margins.
@@ -330,7 +330,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-p-responsive--tiny == true) {
+@if ($u-p-responsive-tiny == true) {
 
     /**
      * Add tiny paddings.
@@ -351,7 +351,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-p-responsive--small == true) {
+@if ($u-p-responsive-small == true) {
 
     /**
      * Add small paddings.
@@ -372,7 +372,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-p-responsive--large == true) {
+@if ($u-p-responsive-large == true) {
 
     /**
      * Add large paddings.
@@ -393,7 +393,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-p-responsive--huge == true) {
+@if ($u-p-responsive-huge == true) {
 
     /**
      * Add huge paddings.
@@ -414,7 +414,7 @@ $u-p-responsive--none:            false !default;
 }
 
 
-@if ($u-p-responsive--none == true) {
+@if ($u-p-responsive-none == true) {
 
     /**
      * Remove paddings.
