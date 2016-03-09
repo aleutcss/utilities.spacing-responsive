@@ -17,9 +17,9 @@ The conventions used in the classes in the spacing module are as follows:
 
 E.g.:
 
-* `.u-p@lap` will give you a padding around the whole object (24px as default) on the @lap-size
-* `.u-mh-huge@desk` will give you a huge (96px as default) horizontal (`h`) margin (`m`) on the @desk-size.
-* `.u-mb-none@palm` will give you no margin (`m`) bottom (`b`) at the @palm-size.
+* `.u-p@m` will give you a padding around the whole object (24px as default) on the @m-size
+* `.u-mh-huge@l` will give you a huge (96px as default) horizontal (`h`) margin (`m`) on the @l-size.
+* `.u-mb-none@s` will give you no margin (`m`) bottom (`b`) at the @s-size.
 
 ## Enable options
 To enable the optional classes set the variables to `true` before you import
