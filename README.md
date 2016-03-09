@@ -26,25 +26,25 @@ To enable the optional classes set the variables to `true` before you import
 the `_utilities.spacing-responsive.scss`-file.
 
 ```scss
-$u-m-responsive:                   false !default;
-$u-m-responsive--tiny:             false !default;
-$u-m-responsive--small:            false !default;
-$u-m-responsive--large:            false !default;
-$u-m-responsive--huge:             false !default;
+$u-m-responsive:                  false !default;
+$u-m-responsive-tiny:             false !default;
+$u-m-responsive-small:            false !default;
+$u-m-responsive-large:            false !default;
+$u-m-responsive-huge:             false !default;
 
-$u-m-responsive--negative:         false !default;
-$u-m-responsive--negative-tiny:    false !default;
-$u-m-responsive--negative-small:   false !default;
-$u-m-responsive--negative-large:   false !default;
-$u-m-responsive--negative-huge:    false !default;
+$u-m-responsive-negative:         false !default;
+$u-m-responsive-negative-tiny:    false !default;
+$u-m-responsive-negative-small:   false !default;
+$u-m-responsive-negative-large:   false !default;
+$u-m-responsive-negative-huge:    false !default;
 
-$u-m-responsive--none:             false !default;
+$u-m-responsive-none:             false !default;
 
 $u-p-responsive:                  false !default;
-$u-p-responsive--tiny:            false !default;
-$u-p-responsive--small:           false !default;
-$u-p-responsive--large:           false !default;
-$u-p-responsive--huge:            false !default;
+$u-p-responsive-tiny:             false !default;
+$u-p-responsive-small:            false !default;
+$u-p-responsive-large:            false !default;
+$u-p-responsive-huge:             false !default;
 
-$u-p-responsive--none:            false !default;
+$u-p-responsive-none:             false !default;
 ```
