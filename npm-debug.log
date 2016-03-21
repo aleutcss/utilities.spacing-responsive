@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/robin/.nvm/versions/node/v4.3.2/bin/node',
+1 verbose cli   '/Users/robin/.nvm/versions/node/v4.3.2/bin/npm',
+1 verbose cli   'deprecate',
+1 verbose cli   'aleut.utilities.responsive-spacing@1.0.1',
+1 verbose cli   'WARNING: This package has been renamed to aleut.utilities.spacing-responsive.' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.2
+4 silly mapToRegistry name aleut.utilities.responsive-spacing
+5 silly mapToRegistry scope (from config) @aleut
+6 verbose mapToRegistry no registry URL found in config for scope @aleut
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry https://registry.npmjs.org/
+9 silly mapToRegistry uri https://registry.npmjs.org/aleut.utilities.responsive-spacing
+10 verbose get GET as part of write; not caching result
+11 verbose request uri https://registry.npmjs.org/aleut.utilities.responsive-spacing?write=true
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 10:30:16 AM
+14 verbose request using bearer token for auth
+15 verbose request id 162e156a3f92fbaf
+16 http request GET https://registry.npmjs.org/aleut.utilities.responsive-spacing?write=true
+17 http 200 https://registry.npmjs.org/aleut.utilities.responsive-spacing?write=true
+18 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+18 verbose headers   etag: '"8UOYPJRB5F4PRYFUAZCAGCMK5"',
+18 verbose headers   'content-type': 'application/json',
+18 verbose headers   'cache-control': 'max-age=0',
+18 verbose headers   'content-length': '6646',
+18 verbose headers   'accept-ranges': 'bytes',
+18 verbose headers   date: 'Mon, 21 Mar 2016 09:30:17 GMT',
+18 verbose headers   via: '1.1 varnish',
+18 verbose headers   connection: 'keep-alive',
+18 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+18 verbose headers   'x-cache': 'MISS',
+18 verbose headers   'x-cache-hits': '0',
+18 verbose headers   'x-timer': 'S1458552617.092833,VS0,VE379',
+18 verbose headers   vary: 'Accept' }
+19 silly get cb [ 200,
+19 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 silly get     etag: '"8UOYPJRB5F4PRYFUAZCAGCMK5"',
+19 silly get     'content-type': 'application/json',
+19 silly get     'cache-control': 'max-age=0',
+19 silly get     'content-length': '6646',
+19 silly get     'accept-ranges': 'bytes',
+19 silly get     date: 'Mon, 21 Mar 2016 09:30:17 GMT',
+19 silly get     via: '1.1 varnish',
+19 silly get     connection: 'keep-alive',
+19 silly get     'x-served-by': 'cache-ams4123-AMS',
+19 silly get     'x-cache': 'MISS',
+19 silly get     'x-cache-hits': '0',
+19 silly get     'x-timer': 'S1458552617.092833,VS0,VE379',
+19 silly get     vary: 'Accept' } ]
+20 verbose get saving aleut.utilities.responsive-spacing to /Users/robin/.npm/registry.npmjs.org/aleut.utilities.responsive-spacing_3Fwrite_3Dtrue/.cache.json
+21 verbose request uri https://registry.npmjs.org/aleut.utilities.responsive-spacing
+22 verbose request sending authorization for write operation
+23 info attempt registry request try #1 at 10:30:17 AM
+24 verbose request using bearer token for auth
+25 http request PUT https://registry.npmjs.org/aleut.utilities.responsive-spacing
+26 http 403 https://registry.npmjs.org/aleut.utilities.responsive-spacing
+27 verbose headers { 'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=300',
+27 verbose headers   'content-length': '126',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Mon, 21 Mar 2016 09:30:18 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-ams4143-AMS',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1458552617.640303,VS0,VE702' }
+28 verbose request invalidating /Users/robin/.npm/registry.npmjs.org/aleut.utilities.responsive-spacing on PUT
+29 verbose stack Error: You do not have permission to publish 'aleut.utilities.responsive-spacing'. Are you logged in as the correct user? : aleut.utilities.responsive-spacing
+29 verbose stack     at makeError (/Users/robin/.nvm/versions/node/v4.3.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+29 verbose stack     at CachingRegistryClient.<anonymous> (/Users/robin/.nvm/versions/node/v4.3.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+29 verbose stack     at Request._callback (/Users/robin/.nvm/versions/node/v4.3.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+29 verbose stack     at Request.self.callback (/Users/robin/.nvm/versions/node/v4.3.2/lib/node_modules/npm/node_modules/request/request.js:198:22)
+29 verbose stack     at emitTwo (events.js:87:13)
+29 verbose stack     at Request.emit (events.js:172:7)
+29 verbose stack     at Request.<anonymous> (/Users/robin/.nvm/versions/node/v4.3.2/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+29 verbose stack     at emitOne (events.js:82:20)
+29 verbose stack     at Request.emit (events.js:169:7)
+29 verbose stack     at IncomingMessage.<anonymous> (/Users/robin/.nvm/versions/node/v4.3.2/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+30 verbose statusCode 403
+31 verbose pkgid aleut.utilities.responsive-spacing
+32 verbose cwd /Users/robin/Projects/aleut/utilities.spacing-responsive
+33 error Darwin 15.3.0
+34 error argv "/Users/robin/.nvm/versions/node/v4.3.2/bin/node" "/Users/robin/.nvm/versions/node/v4.3.2/bin/npm" "deprecate" "aleut.utilities.responsive-spacing@1.0.1" "WARNING: This package has been renamed to aleut.utilities.spacing-responsive."
+35 error node v4.3.2
+36 error npm  v2.14.12
+37 error code E403
+38 error You do not have permission to publish 'aleut.utilities.responsive-spacing'. Are you logged in as the correct user? : aleut.utilities.responsive-spacing
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]

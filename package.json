@@ -1,6 +1,5 @@
 {
-  "name": "aleut.utilities.responsive-spacing"
-,
+  "name": "aleut.utilities.spacing-responsive",
   "version": "1.0.1",
   "description": "Responsively controlled width classes for the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_utilities.spacing-responsive.scss",
@@ -30,6 +29,5 @@
     "aleut.settings.defaults": "~1.0.1",
     "aleut.settings.responsive": "~1.0.1",
     "aleut.tools.responsive": "~1.0.1"
-
   }
 }
